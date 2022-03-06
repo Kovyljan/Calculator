@@ -96,34 +96,34 @@
             <TextBlock x:Name="DisplayText" Text="{Binding Display, Mode=TwoWay}" Margin="10,10,10,10" Padding="10,10,10,10" VerticalAlignment="Center" Background="#FFBBFFF0" TextAlignment="Right" FontSize="22"/>
         </Border>
         <UniformGrid MinHeight="30" Grid.Row="1" Grid.ColumnSpan="5" Rows="4" Columns="5" Background="Black">
-            <Button Margin="5,2,2,2" Style="{StaticResource greyButton}" Content="CE" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource greyButton}" Content="C" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource greyButton}" Content="←" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource greyButton}" Content="±" Command="{Binding Path=ButtonPress}"/>
-            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="/" Command="{Binding Path=OperationButtonPress}"/>
+            <Button Margin="5,2,2,2" Style="{StaticResource greyButton}" Content="CE" Command="{Binding Path=ButtonPress}" CommandParameter="CE"/>
+            <Button Style="{StaticResource greyButton}" Content="C" Command="{Binding Path=ButtonPress}" CommandParameter="C"/>
+            <Button Style="{StaticResource greyButton}" Content="←" Command="{Binding Path=ButtonPress}" CommandParameter="←"/>
+            <Button Style="{StaticResource greyButton}" Content="±" Command="{Binding Path=ButtonPress}" CommandParameter="±"/>
+            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="/" Command="{Binding Path=OperationButtonPress}" CommandParameter="/"/>
 
-            <Button Margin="5,2,2,2" Style="{StaticResource darkGreyButton}" Content="7" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource darkGreyButton}" Content="8" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource darkGreyButton}" Content="9" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource greyButton}" Content="1/x" Command="{Binding Path=SingularOperationButtonPress}"/>
-            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="x" Command="{Binding Path=OperationButtonPress}"/>
+            <Button Margin="5,2,2,2" Style="{StaticResource darkGreyButton}" Content="7" Command="{Binding Path=ButtonPress}" CommandParameter="7"/>
+            <Button Style="{StaticResource darkGreyButton}" Content="8" Command="{Binding Path=ButtonPress}" CommandParameter="8"/>
+            <Button Style="{StaticResource darkGreyButton}" Content="9" Command="{Binding Path=ButtonPress}" CommandParameter="9"/>
+            <Button Style="{StaticResource greyButton}" Content="1/x" Command="{Binding Path=SingularOperationButtonPress}" CommandParameter="1/x"/>
+            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="x" Command="{Binding Path=OperationButtonPress}" CommandParameter="x"/>
 
-            <Button Margin="5,2,2,2" Style="{StaticResource darkGreyButton}" Content="4" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource darkGreyButton}" Content="5" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource darkGreyButton}" Content="6" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource greyButton}" Content="x²" Command="{Binding Path=SingularOperationButtonPress}"/>
-            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="-" Command="{Binding Path=OperationButtonPress}"/>
+            <Button Margin="5,2,2,2" Style="{StaticResource darkGreyButton}" Content="4" Command="{Binding Path=ButtonPress}" CommandParameter="4"/>
+            <Button Style="{StaticResource darkGreyButton}" Content="5" Command="{Binding Path=ButtonPress}" CommandParameter="5"/>
+            <Button Style="{StaticResource darkGreyButton}" Content="6" Command="{Binding Path=ButtonPress}" CommandParameter="6"/>
+            <Button Style="{StaticResource greyButton}" Content="x²" Command="{Binding Path=SingularOperationButtonPress}" CommandParameter="x²"/>
+            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="-" Command="{Binding Path=OperationButtonPress}" CommandParameter="-"/>
 
-            <Button Margin="5,2,2,2" Style="{StaticResource darkGreyButton}" Content="1" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource darkGreyButton}" Content="2" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource darkGreyButton}" Content="3" Command="{Binding Path=ButtonPress}"/>
-            <Button Style="{StaticResource greyButton}" Content="√x" Command="{Binding Path=SingularOperationButtonPress}"/>
-            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="+" Command="{Binding Path=OperationButtonPress}"/>            
+            <Button Margin="5,2,2,2" Style="{StaticResource darkGreyButton}" Content="1" Command="{Binding Path=ButtonPress}" CommandParameter="1"/>
+            <Button Style="{StaticResource darkGreyButton}" Content="2" Command="{Binding Path=ButtonPress}" CommandParameter="2"/>
+            <Button Style="{StaticResource darkGreyButton}" Content="3" Command="{Binding Path=ButtonPress}" CommandParameter="3"/>
+            <Button Style="{StaticResource greyButton}" Content="√x" Command="{Binding Path=SingularOperationButtonPress}" CommandParameter="√x"/>
+            <Button Margin="2,2,5,2" Style="{StaticResource orangeButton}" Content="+" Command="{Binding Path=OperationButtonPress}" CommandParameter="+"/>            
         </UniformGrid>
 
-        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource darkGreyButton}" Content="0" Command="{Binding Path=ButtonPress}"/>
-        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="2" Style="{StaticResource darkGreyButton}" Content="," Command="{Binding Path=ButtonPress}"/>
-        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="3" Style="{StaticResource greyButton}" Content="%" Command="{Binding Path=SingularOperationButtonPress}"/>
-        <Button Margin="2,2,5,5" Grid.Row="2" Grid.Column="4" Style="{StaticResource orangeButton}" Content="=" Command="{Binding Path=OperationButtonPress}"/>        
+        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource darkGreyButton}" Content="0" Command="{Binding Path=ButtonPress}" CommandParameter="0"/>
+        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="2" Style="{StaticResource darkGreyButton}" Content="," Command="{Binding Path=ButtonPress}" CommandParameter=","/>
+        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="3" Style="{StaticResource greyButton}" Content="%" Command="{Binding Path=SingularOperationButtonPress}" CommandParameter="%"/>
+        <Button Margin="2,2,5,5" Grid.Row="2" Grid.Column="4" Style="{StaticResource orangeButton}" Content="=" Command="{Binding Path=OperationButtonPress}" CommandParameter="="/>        
     </Grid>
 </Window>

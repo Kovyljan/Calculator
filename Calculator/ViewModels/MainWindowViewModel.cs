@@ -87,7 +87,7 @@ namespace Calculator.ViewModels
             SingularOperationButtonPress = new RelayCommand(OnSingularOperationButtonPressCommandExecute, CanSingularOperationButtonPressCommandExecuted);
             ButtonPress = new RelayCommand(OnDigitButtonPressCommandExecute, CanDigitButtonPressCommandExecuted);
             
-        }       
+        }
 
         private bool CanCopyCommandExecuted(object p) => true;
 
