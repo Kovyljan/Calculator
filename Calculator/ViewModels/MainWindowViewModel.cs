@@ -114,7 +114,8 @@ namespace Calculator.ViewModels
                     return;
                 }
                 else
-                {                    
+                {
+                    LastOperation = p.ToString();
                     Display = Result;
                     FirstOperand = display;
                 }
@@ -140,7 +141,8 @@ namespace Calculator.ViewModels
                 return;
             }
             else
-            {               
+            {
+                LastOperation = "=";
                 Display = Result;
                 FirstOperand = display;
                 newDisplayRequired = true;
