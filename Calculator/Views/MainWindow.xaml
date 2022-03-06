@@ -122,7 +122,7 @@
         </UniformGrid>
 
         <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource darkGreyButton}" Content="0" Command="{Binding Path=ButtonPress}" CommandParameter="0"/>
-        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="2" Style="{StaticResource darkGreyButton}" Content="," Command="{Binding Path=ButtonPress}" CommandParameter=","/>
+        <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="2" Style="{StaticResource darkGreyButton}" Content="." Command="{Binding Path=ButtonPress}" CommandParameter="."/>
         <Button Margin="2,2,2,5" Grid.Row="2" Grid.Column="3" Style="{StaticResource greyButton}" Content="%" Command="{Binding Path=SingularOperationButtonPress}" CommandParameter="%"/>
         <Button Margin="2,2,5,5" Grid.Row="2" Grid.Column="4" Style="{StaticResource orangeButton}" Content="=" Command="{Binding Path=OperationButtonPress}" CommandParameter="="/>        
     </Grid>

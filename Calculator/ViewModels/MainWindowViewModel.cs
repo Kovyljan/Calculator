@@ -175,16 +175,16 @@ namespace Calculator.ViewModels
                 case "±":
                     Display = display.Contains("-") ? display.Remove(display.IndexOf("-"), 1) : "-" + display;
                     break;
-                case ",":
+                case ".":
                     if (newDisplayRequired)
                     {
-                        Display = "0,";
+                        Display = "0.";
                     }
                     else
                     {
-                        if (!display.Contains(","))
+                        if (!display.Contains("."))
                         {
-                            Display = display + ",";
+                            Display = display + ".";
                         }
                     }
                     break;
