@@ -134,7 +134,7 @@ namespace Calculator.ViewModels
             Operation = p.ToString();
             calculation.CalculateResult();
 
-            if (Operation == "1/x" && FirstOperand == "0" || Operation == "√х" && Convert.ToDouble(FirstOperand) < 0)
+            if (Operation == "1/x" && FirstOperand == "0" || Operation == "√x" && Convert.ToDouble(FirstOperand) < 0)
             {
                 Display = "Ошибка";
                 newDisplayRequired = true;

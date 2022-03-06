@@ -63,11 +63,11 @@ namespace Calculator.Models
                     result = (Convert.ToDouble(FirstOperand) / 100).ToString();
                     break;
 
-                case ("√х"):
+                case ("√x"):
                     result = Convert.ToDouble(FirstOperand) < 0 ? "Ошибка" : Math.Sqrt(Convert.ToDouble(FirstOperand)).ToString();
                     break;
 
-                case ("х²"):
+                case ("x²"):
                     result = Math.Pow(Convert.ToDouble(FirstOperand), 2).ToString();
                     break;
 
